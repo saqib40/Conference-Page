@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 .a {
-  height: 80vh;
+  height: auto;
   background: #293f50;
   border: 0.01px solid #293f50;
 }
@@ -19,8 +19,13 @@
   text-align: center;
   font-size: 20px;
   font-family: "KoHo", sans-serif;
-  margin-top: 8vh;
+  margin-top: 5vh;
   margin-bottom: 5vh;
+}
+.gand {
+  width: 100%;
+  height: auto;
+  margin-bottom: 7vh;
 }
 .a a {
   display: block;
@@ -38,7 +43,6 @@
   font-weight: 500;
   margin: auto;
 }
-
 .a a:hover {
   transform: scale(1.05, 1.05);
 }
@@ -49,15 +53,119 @@
   letter-spacing: 5px;
 }
 .flexA h2 {
-  color: white;
-  font-family: "Lato", sans-serif;
+  color: #1ed760;
+  font-size: 24px;
+  font-family: "Lexend Exa", sans-serif;
 }
 .flexA {
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 15vh;
+  margin-top: 5vh;
+}
+@media (max-width: 877px) {
+  .flexA {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flexA h2 {
+    margin-top: 3vh;
+  }
+  .a p {
+    text-align: left;
+  }
+  .a a {
+    margin: 0 0 0 0;
+  }
+}
+@media (max-width: 431px) {
+  .flexA h1 {
+    font-size: 40px;
+  }
+  .flexA h2 {
+    font-size: 19px;
+  }
+  .a p {
+    font-size: 17px;
+  }
+  .a a {
+    font-size: 14px;
+  }
+}
+nav {
+  background-color: #293f50;
+  display: flex;
+  justify-content: flex-end;
+}
+.DropDown1 {
+  height: 50px;
+  width: 90px;
+  background-color: #293f50;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.DropDown1:hover {
+  color: #1ed760;
+}
+
+.content {
+  list-style-type: none;
+  background-color: #293f50;
+  width: 100vw;
+  display: none;
+}
+
+.content a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+  font-family: "Lexend Exa", sans-serif;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+li a:hover {
+  color: #1ed760;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width: 31em) {
+  .DropDown1 {
+    display: none;
+  }
+
+  .content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #293f50;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .gandu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  li a:hover {
+    color: #1ed760;
+  }
 }
 .b {
   height: auto;
@@ -103,30 +211,6 @@
 .third {
   height: auto;
   width: 280px;
-}
-
-.nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.nav ul {
-  display: flex;
-  padding: 17px;
-  width: 100%;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  font-family: "KoHo", sans-serif;
-  padding: 0 25px;
-}
-.nav ul li a:hover {
-  color: #1ed760;
 }
 
 .d {
